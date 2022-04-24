@@ -1,0 +1,356 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.work-container {
+    display: flex;
+    height: 969px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.person-card {
+    border-radius: 30px;
+    width: 1000px;
+    height: 800px;
+    box-shadow: 2px 2px 13px -2px rgba(174, 171, 193, 0.39);
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
+.work-avatar {
+    margin-left: 54px;
+    margin-top: 35px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.personal-infos {
+    display: flex;
+    flex-direction: row;
+}
+
+.person-info {
+    margin-left: 54px;
+    margin-top: 40px;
+}
+
+.person-name {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #444444;
+}
+
+.person-role {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 148.69%;
+    text-transform: uppercase;
+    color: rgba(68, 68, 68, 0.6);
+}
+
+.star-div {
+    display: flex;
+    margin-top: 10px;
+}
+
+.star-icon {
+    margin-top: 16px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    color: #283660;
+}
+
+.rank-info {
+    margin-top: 16px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #979797;
+    line-height: 25px;
+    margin-left: 13px;
+    margin-bottom: 20px;
+}
+
+.label-skills {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 13px;
+    color: rgba(68, 68, 68, 0.9);
+}
+
+.main-skills {
+    display: flex;
+}
+
+.skill-card {
+    margin-top: 10px;
+    margin-right: 3px;
+    width: fit-content;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #D7DDEF;
+    border-radius: 20px;
+
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #54679E;
+}
+
+.see-certificates {
+    margin-left: 100px;
+    margin-top: 40px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #54679E;
+}
+
+.tech-btn {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-top: 11px;
+    justify-content: space-between;
+}
+
+.tech-skills {
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-icon1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #283660;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 14px;
+    font-size: 22px;
+}
+
+.tech-icon2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3D5187;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 14px;
+    font-size: 22px;
+}
+
+.tech-icon3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #697DB7;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.blue-btn {
+    padding: 15px;
+    background: #283660;
+    border-radius: 45px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0px 64px;
+    border: none;
+    cursor: pointer;
+}
+
+.blue-btn:hover {
+    background: #3D5187;
+}
+
+.h2-txt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #54679E;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.h3-txt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #54679E;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.p-txt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 22px;
+    color: #444444;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+}
+
+.project-card {
+    margin-left: 50px;
+}
+
+.project-img {
+    width: 265px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.project-details {
+    position: relative;
+    top: -49px;
+    z-index: 0;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.label {
+    padding: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    color: #283660;
+}
+
+.data-txt {
+    padding: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #444444;
+}
+
+.work-card {
+    margin-top: 12px;
+    display: flex;
+}
+
+.work-name {
+    min-width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.observation-container {
+    max-width: 600px;
+}
+
+.other-skills {
+    display: flex;
+    margin-left: 50px;
+}
+
+.white-btn {
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 45px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    color: #54679E;
+    border: 0.6px solid #54679E;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.white-btn:hover {
+    background: #54679E;
+    color: #FFF;
+}
+
+.footer-btn {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.list-jobs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h2-num {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #056C03;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.letras-miudas {
+    margin-left: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(68, 68, 68, 0.4);
+}

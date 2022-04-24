@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import './styles.css';
 import logo from '../../assets/images/logo/logo.png';
 
+import { Link } from 'react-router-dom';
+
 export const SideMenu = () => {
-    const [inactive, setInactive] = useState(false);
+    const [inactive, setInactive] = useState(true);
 
     return (
         <div className={`side-menu ${inactive ? "inactive" : ""}`}>
@@ -27,38 +29,78 @@ export const SideMenu = () => {
             <div className='main-menu'>
                 <ul>
                     <li>
-                        <a className='menu-item'>
+                        <Link to="/home" className='menu-item'>
                             <div className='menu-icon'>
                                 <i class="bi bi-house-fill"></i>
                             </div>
                             <span>Home</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className='menu-item'>
+                        <Link to="/work" className='menu-item'>
                             <div className='menu-icon'>
-                            <i class="bi bi-code-square"></i>
+                                <i class="bi bi-code-square"></i>
                             </div>
                             <span>{`< Works! >`}</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className='menu-item'>
+                        <Link to="/workspace" className='menu-item'>
                             <div className='menu-icon'>
-                            <i class="bi bi-person-workspace"></i>
+                                <i class="bi bi-person-workspace"></i>
                             </div>
                             <span>Meus Trabalhos</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className='menu-item'>
+                        <Link to="/chat" className='menu-item'>
                             <div className='menu-icon'>
-                            <i class="bi bi-chat-dots-fill"></i>
+                                <i class="bi bi-chat-dots-fill"></i>
                             </div>
                             <span>Chat</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
+            </div>
+
+            <div className='side-menu-footer'>
+                {inactive ? <a className='inactive-social-item'>
+                    <div onClick={() => setInactive(!inactive)} className='inactive-social-icon'>
+                        <i class="bi bi-share-fill"></i>
+                    </div>
+                </a>
+                    : <div className='social-midia'>
+                        <ul>
+                            <li>
+                                <a className='social-item'>
+                                    <div className='social-icon'>
+                                        <i class="bi bi-facebook"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a className='social-item'>
+                                    <div className='social-icon'>
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a className='social-item'>
+                                    <div className='social-icon'>
+                                        <i class="bi bi-discord"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a className='social-item'>
+                                    <div className='social-icon'>
+                                        <i class="bi bi-telegram"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>}
             </div>
         </div>
     )

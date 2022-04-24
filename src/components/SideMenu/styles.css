@@ -125,3 +125,58 @@ a:hover {
     line-height: 40px;
     text-align: center;
 }
+
+.side-menu-footer {
+    width: 100%;
+    background-color: #33445a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing:  border-box;
+}
+
+.social-midia ul {
+    display: inline-flex;
+}
+
+.social-item {
+    color:#9db1ca;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: opacity .2s ease-in;
+}
+
+.inactive .social-item {
+    opacity: 0;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.inactive-social-item {
+    color:#9db1ca;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    cursor: pointer;
+    transition: opacity .2s ease-in;
+}
+
+.inactive-social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
