@@ -24,7 +24,7 @@ export const FreelaCard = () => {
                     nome: "Comer Carne"
                 }
             ]
-        }
+        },
     ])
 
     useEffect = (() => {
