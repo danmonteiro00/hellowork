@@ -1,0 +1,120 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 100%;
+  height: 68px;
+}
+
+.top-one {
+  display: flex;
+  align-items: center;
+}
+
+.top-two {
+  display: flex;
+  align-items: center;
+}
+
+.title-link {
+  text-decoration: none;
+  color: #585858;
+}
+
+.title {
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 27px;
+  letter-spacing: -0.03em;
+  margin-right: 90px;
+}
+
+.search-controller {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 125px;
+  position: absolute;
+}
+
+.search .search-btn {
+  width: 100px;
+  height: 33px;
+  background: #54679E;
+  border-radius: 25px;
+  border: 0;
+  font-size: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-left: 170px;
+  position: absolute;
+}
+
+.search-controller input {
+  border: 0;
+  outline: none;
+  height: 38px;
+  background-color: #F2F5FC;
+  border-radius: 25px;
+  display: block;
+  width: 400px;
+  padding-left: 10px;
+  color: rgba(84, 103, 158, 0.6);
+  box-sizing: border-box;
+}
+
+.search-controller input::placeholder {
+  color: #9db1ca;
+  font-size: 14px;
+}
+
+.top-link {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #585858;
+  margin-right: 40px;
+}
+
+.top-icon {
+  color: #54679E;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: #9db1ca;
+  color: rgba(84, 103, 158, 0.8);
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.login-icon {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #585858;
+  margin-right: 10px;
+}

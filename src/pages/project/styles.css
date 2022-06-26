@@ -1,0 +1,26 @@
+.description-text {
+  max-width: 100%;
+}
+
+.new-btn {
+  width: 298px;
+  height: 40px;
+  background: #283660;
+  border-radius: 7px;
+  border: none;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.project-item {
+  max-height: 140px;
+  border-radius: 8px;
+}
+
+.project-image {
+  max-height: 60px;
+}
